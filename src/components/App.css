@@ -1,0 +1,79 @@
+.App {
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-template-columns: 250px auto;
+  height: 100vh;
+  overflow: scroll;
+  background: linear-gradient(white, rgb(103, 103, 245));
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  grid-column: 1 / span 2;
+  padding: 10px 15px;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.navigation-container,
+article {
+  height: 100%;
+  padding: 10px;
+}
+
+.navigation-container {
+  background-color: #dee9ff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+img {
+  display: flex;
+  transform: scale(0.5);
+}
+
+.navigation-container p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+article .date {
+  font-style: italic;
+}
+
+article .body {
+  white-space: break-spaces;
+}
+
+.error {
+  background-color: red;
+  color: gold;
+  padding: 5px;
+}
+
+button {
+  background-color: #007bff; /* Bootstrap primary button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px; /* Adjust as necessary */
+  cursor: pointer;
+  border-radius: 5px; /* Optional, for rounded corners */
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
